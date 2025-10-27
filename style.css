@@ -1,0 +1,81 @@
+h1{font-family: Papyrus, fantasy;
+text-align:center;
+font-color: maroon;
+border-top: none;
+border-bottom: solid;}
+
+body {
+  max-width: 960px; /* Or 1000px—based on golden ratio math */
+  margin: auto;
+  padding: 20px;
+}
+
+#input{font-family: "Lucida Handwriting";}
+
+#topbar{text-align: center;
+mmargin-bottom: 20px;}
+
+ul{ padding-left: 0px;}
+
+li{
+  list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #c3c3c3;
+  padding: 10px 0px 10px 16px;
+  font-family: "Lucida Calligraphy", "Apple Chancery", cursive;
+  font-size: 13px;
+  mmargin-bottom: 10px;
+}
+
+li.priority{
+  background-color: orange; 
+  color: white;
+}
+
+.done{ background-color: #228c22;}
+
+.remove{background-color: #ff2400;}
+
+.important{
+  background-color: inherit; 
+  color: inherit;
+}
+
+#important:visited{background-color: none;}
+
+.important:focus{background-color:orange;}
+
+.important:inactive{background-color: none;}
+
+li.finished{color: white;
+background-color: #999999;
+text-decoration: line-through;}
+
+input[type="text"]{
+  font-size: 16px;
+  width: 61.8%;
+  padding: 10px;
+  margin: -6px 4px 0px 0px;
+}
+
+#addButton{padding: 10px;
+width: 20%;
+font-size: 16px;}
+
+#aboutContainer{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.about-btn{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.aboutColor{background-color: #effd5f;}
+ 
+#divAbout{width: 150px;
+font-size: 16px;
+margin: 5px;
+}
