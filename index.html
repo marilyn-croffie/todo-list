@@ -1,21 +1,51 @@
-<html>
-  <head> <title> Interactive To Do List </title></head>
-  
-  <body> 
-    <h1 ID="myHeader"> To Do List </h1>
-    <div ID="topbar">
-      <input type="text" id="input" placeholder="enter task..."/>
-      <input type="button" value="Add" onclick="addTask()" id="addButton"/></div>
-    <hr>
-    <ul id="tasks">
-    
-    </ul>
-    
-    <hr>
-    
-    <div id="aboutContainer">
-      <input type="button" value="About" onclick="doAbout()" class="about-btn"/>
-    <div ID="divAbout"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="myHeader">To-Do List</h1>
+  </header>
+
+  <!-- Input section: captures user-entered tasks -->
+  <section id="topbar">
+    <input 
+      type="text" 
+      id="input" 
+      placeholder="Enter a task..." 
+      aria-label="Task input"
+    />
+    <input 
+      type="button" 
+      value="Add" 
+      id="addButton" 
+      onclick="addTask()" 
+    />
+  </section>
+
+  <hr>
+
+  <!-- Main list container -->
+  <ul id="tasks"></ul>
+
+  <hr>
+
+  <!-- About section -->
+  <aside id="aboutContainer">
+    <input 
+      type="button" 
+      value="About" 
+      class="about-btn" 
+      onclick="doAbout()" 
+    />
+    <div id="divAbout"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
 </html>
-    
