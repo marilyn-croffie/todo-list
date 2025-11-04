@@ -6,46 +6,43 @@
   <title>Interactive To-Do List</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  
+  <!-- Header -->
   <header>
-    <h1 id="myHeader">To-Do List</h1>
+    <h1>To-Do List</h1>
   </header>
 
-  <!-- Input section: captures user-entered tasks -->
-  <section id="topbar">
-    <input 
-      type="text" 
-      id="input" 
-      placeholder="Enter a task..." 
-      aria-label="Task input"
-    />
-    <input 
-      type="button" 
-      value="Add" 
-      id="addButton" 
-      onclick="addTask()" 
-    />
+  <!-- Input Section -->
+  <section id="inputbar">
+    <input type="text" id="input" placeholder="Enter task..." aria-label="New task input" />
+    <input type="button" value="Add" id="addButton" onclick="addTask()" aria-label="Add task" />
+  </section>
+  
+  <!-- Toolbar -->
+  <section id="toolbar">
+    <input type="checkbox" id="selectAll" title="Select all tasks" aria-label="Select all tasks" />
+    <div id="toolbar-actions">
+      <span id="markDoneBtn" onclick="markSelectedDone()">Mark Done</span>
+      <span class="divider">|</span>
+      <span id="deleteBtn" onclick="deleteSelected()">Delete</span>
+    </div>
   </section>
 
-  <hr>
+  <hr /> 
+  
+  <!-- Task List -->
+  <section>
+    <ul id="tasks"></ul>
+  </section>
 
-  <!-- Main list container -->
-  <ul id="tasks"></ul>
-
-  <hr>
-
-  <!-- About section -->
-  <aside id="aboutContainer">
-    <input 
-      type="button" 
-      value="About" 
-      class="about-btn" 
-      onclick="doAbout()" 
-    />
+  <!-- About Section -->
+  <section id="aboutContainer">
+    <input type="button" value="About" onclick="doAbout()" class="about-btn" aria-label="About this app" />
     <div id="divAbout"></div>
-  </aside>
-
+  </section>
+  
   <script src="script.js"></script>
+  
 </body>
 </html>
